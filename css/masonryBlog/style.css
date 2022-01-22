@@ -1,0 +1,640 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: 'PT Sans', sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.focus a {
+  color: #f9b129 !important; }
+  .focus a i {
+    transform: rotate(-180deg); }
+.focus .dropMenu {
+  opacity: 1 !important;
+  transform: translateY(0px) !important;
+  visibility: visible !important; }
+
+.headerJS {
+  animation: headerAnimation both 1s;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 999; }
+
+@keyframes headerAnimation {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%); }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+    visibility: visible; } }
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden; }
+
+header .headerPage {
+  padding: 1rem 0px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  border: 0 solid;
+  background-color: #fff; }
+  header .headerPage .row {
+    align-items: center; }
+  header .headerPage .logoPage a {
+    display: block;
+    position: relative;
+    padding-bottom: 40%;
+    overflow: hidden; }
+  header .headerPage .logoPage img {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%; }
+  header .headerPage .contactPage .phonePage a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+    font-size: 20px; }
+    header .headerPage .contactPage .phonePage a i {
+      font-size: 20px;
+      color: #f9b129; }
+    header .headerPage .contactPage .phonePage a:hover {
+      color: #f9b129; }
+  header .headerPage .contactPage .cartPage a {
+    outline: none;
+    text-decoration: none;
+    color: #9b9b9b;
+    font-size: 20px;
+    transition: all 0.3s; }
+    header .headerPage .contactPage .cartPage a i {
+      color: #f9b129;
+      font-size: 20px; }
+    header .headerPage .contactPage .cartPage a:hover {
+      color: #f9b129; }
+  header .headerPage .menuPage ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    header .headerPage .menuPage ul li {
+      float: left;
+      position: relative;
+      margin-right: 25px; }
+      header .headerPage .menuPage ul li a {
+        display: flex;
+        padding: 10px;
+        outline: none;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        align-items: center;
+        font-size: 20px; }
+        header .headerPage .menuPage ul li a i {
+          transition: all ease-in-out 0.3s;
+          font-size: 10px;
+          margin-left: 5px;
+          font-weight: bolder; }
+      header .headerPage .menuPage ul li:hover a {
+        color: #f9b129; }
+        header .headerPage .menuPage ul li:hover a i {
+          transform: rotate(-180deg); }
+      header .headerPage .menuPage ul li:last-child {
+        margin-right: 0px; }
+      header .headerPage .menuPage ul li .dropMenu {
+        position: absolute;
+        transform: translateY(25px);
+        z-index: 10;
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+        border: 0;
+        opacity: 0;
+        visibility: hidden;
+        top: 55px;
+        background-color: #fff;
+        transition: all ease-in-out 0.3s; }
+        header .headerPage .menuPage ul li .dropMenu .row1Menu, header .headerPage .menuPage ul li .dropMenu .row2Menu, header .headerPage .menuPage ul li .dropMenu .row3Menu, header .headerPage .menuPage ul li .dropMenu .row4Menu {
+          justify-content: left; }
+          header .headerPage .menuPage ul li .dropMenu .row1Menu li, header .headerPage .menuPage ul li .dropMenu .row2Menu li, header .headerPage .menuPage ul li .dropMenu .row3Menu li, header .headerPage .menuPage ul li .dropMenu .row4Menu li {
+            border-bottom: 1px solid #f2f3f8;
+            border-right: 1px solid #f2f3f8;
+            margin-right: 0px;
+            text-align: center;
+            transition: all 0.3s; }
+            header .headerPage .menuPage ul li .dropMenu .row1Menu li:hover, header .headerPage .menuPage ul li .dropMenu .row2Menu li:hover, header .headerPage .menuPage ul li .dropMenu .row3Menu li:hover, header .headerPage .menuPage ul li .dropMenu .row4Menu li:hover {
+              background-color: #f2f3f8; }
+            header .headerPage .menuPage ul li .dropMenu .row1Menu li a, header .headerPage .menuPage ul li .dropMenu .row2Menu li a, header .headerPage .menuPage ul li .dropMenu .row3Menu li a, header .headerPage .menuPage ul li .dropMenu .row4Menu li a {
+              display: block;
+              color: black !important;
+              font-size: 18px; }
+            header .headerPage .menuPage ul li .dropMenu .row1Menu li:last-child, header .headerPage .menuPage ul li .dropMenu .row2Menu li:last-child, header .headerPage .menuPage ul li .dropMenu .row3Menu li:last-child, header .headerPage .menuPage ul li .dropMenu .row4Menu li:last-child {
+              border-bottom: 1px solid #f2f3f8;
+              border-right: 0px; }
+    header .headerPage .menuPage ul .Menu2 .dropMenu ul {
+      flex-direction: column; }
+      header .headerPage .menuPage ul .Menu2 .dropMenu ul li {
+        min-width: 200px;
+        border-right: none;
+        text-align: left;
+        border-bottom: 1px solid #d3d3d6; }
+        header .headerPage .menuPage ul .Menu2 .dropMenu ul li a {
+          padding: 10px 10px 10px 25px; }
+          header .headerPage .menuPage ul .Menu2 .dropMenu ul li a span {
+            transition: all linear 0.1s;
+            display: inline-block;
+            transform: translateX(-10px); }
+          header .headerPage .menuPage ul .Menu2 .dropMenu ul li a i {
+            opacity: 0;
+            visibility: hidden;
+            transition: all linear 0.2s;
+            transform: rotate(0deg) translateX(-10px); }
+        header .headerPage .menuPage ul .Menu2 .dropMenu ul li:hover {
+          background-color: transparent; }
+          header .headerPage .menuPage ul .Menu2 .dropMenu ul li:hover a {
+            color: #ed5d5d !important; }
+            header .headerPage .menuPage ul .Menu2 .dropMenu ul li:hover a i {
+              opacity: 1 !important;
+              visibility: visible !important;
+              transform: translateX(0px) !important; }
+            header .headerPage .menuPage ul .Menu2 .dropMenu ul li:hover a span {
+              transform: translateX(0px); }
+    header .headerPage .menuPage ul .Menu3 .dropMenu {
+      display: flex;
+      padding: 20px 0px;
+      right: -400px; }
+      header .headerPage .menuPage ul .Menu3 .dropMenu ul {
+        flex-direction: column;
+        border-right: 1px solid #f2f3f8;
+        align-items: baseline; }
+        header .headerPage .menuPage ul .Menu3 .dropMenu ul .row1Child {
+          margin-bottom: 30px; }
+        header .headerPage .menuPage ul .Menu3 .dropMenu ul h2 {
+          padding: 10px 10px 10px 20px;
+          display: block;
+          transform: translateX(10px);
+          color: #f9b129;
+          font-weight: bolder;
+          font-size: 20px; }
+        header .headerPage .menuPage ul .Menu3 .dropMenu ul li {
+          min-width: 300px;
+          border-right: none;
+          text-align: left;
+          border-right: 0px;
+          border-bottom: 0px; }
+          header .headerPage .menuPage ul .Menu3 .dropMenu ul li a {
+            padding: 10px 10px 10px 25px; }
+            header .headerPage .menuPage ul .Menu3 .dropMenu ul li a span {
+              transition: all linear 0.1s;
+              display: inline-block;
+              transform: translateX(-10px); }
+            header .headerPage .menuPage ul .Menu3 .dropMenu ul li a i {
+              opacity: 0;
+              visibility: hidden;
+              transition: all linear 0.2s;
+              transform: rotate(0deg) translateX(-10px); }
+          header .headerPage .menuPage ul .Menu3 .dropMenu ul li:last-child {
+            border-bottom: 0px;
+            border-right: 0px; }
+          header .headerPage .menuPage ul .Menu3 .dropMenu ul li:hover {
+            background-color: transparent; }
+            header .headerPage .menuPage ul .Menu3 .dropMenu ul li:hover a {
+              color: #ed5d5d !important; }
+              header .headerPage .menuPage ul .Menu3 .dropMenu ul li:hover a i {
+                opacity: 1 !important;
+                visibility: visible !important;
+                transform: translateX(0px) !important; }
+              header .headerPage .menuPage ul .Menu3 .dropMenu ul li:hover a span {
+                transform: translateX(0px); }
+
+.activeNavMobile {
+  left: 0px !important; }
+
+.toggleIcon i {
+  transform: rotate(180deg); }
+  .toggleIcon i::before {
+    content: "\f061"; }
+
+nav {
+  display: none; }
+  nav .navMobile .fullNav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 999; }
+    nav .navMobile .fullNav .headerNav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      position: relative;
+      z-index: 999;
+      height: 140px; }
+      nav .navMobile .fullNav .headerNav .logoPage img {
+        width: 100%; }
+      nav .navMobile .fullNav .headerNav .navIcon {
+        width: 15%;
+        text-align: center; }
+        nav .navMobile .fullNav .headerNav .navIcon i {
+          transition: all ease-in-out 0.2s;
+          font-size: 20px;
+          font-weight: bolder; }
+    nav .navMobile .fullNav .listMenu {
+      position: fixed;
+      top: 120px;
+      background-color: #fff;
+      padding-top: 20px;
+      width: 300px;
+      left: -100%;
+      transition: left ease-in-out 0.3s;
+      overflow-y: auto;
+      overflow-x: hidden;
+      z-index: 99;
+      bottom: -1px; }
+      nav .navMobile .fullNav .listMenu .phone {
+        padding: 20px;
+        display: block;
+        outline: none;
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        transition: all 0.3s;
+        font-weight: bolder; }
+        nav .navMobile .fullNav .listMenu .phone i {
+          color: #f9b129;
+          transform: rotate(-45deg); }
+        nav .navMobile .fullNav .listMenu .phone:hover {
+          color: #f9b129 !important; }
+      nav .navMobile .fullNav .listMenu .cartMenu {
+        padding: 20px;
+        display: block;
+        outline: none;
+        text-decoration: none;
+        color: #9b9b9b;
+        font-size: 25px;
+        transition: all 0.3s;
+        font-weight: bolder; }
+        nav .navMobile .fullNav .listMenu .cartMenu i {
+          color: #f9b129; }
+        nav .navMobile .fullNav .listMenu .cartMenu:hover {
+          color: #f9b129 !important; }
+      nav .navMobile .fullNav .listMenu .activeListMenu li i {
+        transform: rotate(90deg) !important; }
+      nav .navMobile .fullNav .listMenu ul h2 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bolder;
+        padding: 10px 0px;
+        color: #f9b129; }
+      nav .navMobile .fullNav .listMenu ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        flex-wrap: wrap; }
+        nav .navMobile .fullNav .listMenu ul li:hover {
+          background-color: #f9b129; }
+          nav .navMobile .fullNav .listMenu ul li:hover a {
+            color: #fff; }
+          nav .navMobile .fullNav .listMenu ul li:hover i {
+            color: #fff; }
+        nav .navMobile .fullNav .listMenu ul li a {
+          outline: none;
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+          flex: 1 0 auto;
+          text-align: left;
+          padding: 20px;
+          transition: all 0.3s;
+          display: block; }
+        nav .navMobile .fullNav .listMenu ul li i {
+          color: black;
+          transform: rotate(-90deg);
+          font-size: 18px;
+          transition: all 0.3s;
+          padding: 20px; }
+        nav .navMobile .fullNav .listMenu ul li .dropdownMenuChild {
+          display: none;
+          width: 100%;
+          background-color: #fff; }
+          nav .navMobile .fullNav .listMenu ul li .dropdownMenuChild ul li:hover {
+            background-color: #f2f3f8 !important; }
+          nav .navMobile .fullNav .listMenu ul li .dropdownMenuChild ul li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black !important; }
+            nav .navMobile .fullNav .listMenu ul li .dropdownMenuChild ul li a .imageMenu {
+              margin-right: 20px; }
+              nav .navMobile .fullNav .listMenu ul li .dropdownMenuChild ul li a .imageMenu img {
+                width: 100%; }
+
+.contentMenuPage {
+  background-image: url(../../images/bg-image-breadcrumbs.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6rem 0px; }
+  .contentMenuPage .textContentMenu {
+    text-align: center; }
+    .contentMenuPage .textContentMenu h5 {
+      font-size: 60px;
+      color: #fff;
+      font-weight: bolder;
+      margin-bottom: 20px; }
+    .contentMenuPage .textContentMenu ul {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .contentMenuPage .textContentMenu ul li {
+        margin-right: 20px; }
+        .contentMenuPage .textContentMenu ul li a {
+          text-decoration: none;
+          outline: none;
+          color: #fff;
+          font-size: 20px; }
+        .contentMenuPage .textContentMenu ul li i {
+          color: #fff; }
+        .contentMenuPage .textContentMenu ul li .active {
+          color: #f9b129;
+          transition: all 0.3s;
+          margin-right: 20px; }
+          .contentMenuPage .textContentMenu ul li .active:hover {
+            color: #fff; }
+        .contentMenuPage .textContentMenu ul li:last-child {
+          margin-right: 0px; }
+
+.focusSearch {
+  opacity: 0; }
+
+main .mainPage {
+  padding: 4rem 0px; }
+  main .mainPage .fullItemMain .CardItem {
+    margin-bottom: 40px;
+    box-shadow: 0 0 0 0.75pt #d1d1d1, 0 0 3pt 0.75pt #ccc;
+    border: 0; }
+    main .mainPage .fullItemMain .CardItem .imageCardItem {
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 58%; }
+      main .mainPage .fullItemMain .CardItem .imageCardItem img {
+        width: 100%;
+        position: absolute;
+        content: "";
+        left: 0px;
+        top: 0px; }
+    main .mainPage .fullItemMain .CardItem .contentCardItem {
+      padding: 20px; }
+      main .mainPage .fullItemMain .CardItem .contentCardItem .subjectCard {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px; }
+        main .mainPage .fullItemMain .CardItem .contentCardItem .subjectCard .nameItem {
+          outline: none;
+          text-decoration: none;
+          padding: 5px;
+          background-color: #f9b129;
+          color: #fff;
+          border-radius: 5px;
+          margin-right: 10px; }
+          main .mainPage .fullItemMain .CardItem .contentCardItem .subjectCard .nameItem:hover {
+            background-color: #e89a07; }
+        main .mainPage .fullItemMain .CardItem .contentCardItem .subjectCard i {
+          color: #9b9b9b; }
+        main .mainPage .fullItemMain .CardItem .contentCardItem .subjectCard .time {
+          flex: 1 0 auto;
+          text-align: right; }
+          main .mainPage .fullItemMain .CardItem .contentCardItem .subjectCard .time i {
+            color: #f9b129; }
+          main .mainPage .fullItemMain .CardItem .contentCardItem .subjectCard .time span {
+            color: #9b9b9b; }
+      main .mainPage .fullItemMain .CardItem .contentCardItem .nameCardItem {
+        outline: none;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        transition: all 0.3s; }
+        main .mainPage .fullItemMain .CardItem .contentCardItem .nameCardItem:hover {
+          color: #f9b129; }
+      main .mainPage .fullItemMain .CardItem .contentCardItem .contentChild {
+        margin-top: 15px;
+        line-height: 1.5rem; }
+  main .mainPage .pagniationItem ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    main .mainPage .pagniationItem ul li {
+      padding: 5px 10px;
+      border: 1px solid black; }
+      main .mainPage .pagniationItem ul li a {
+        outline: none;
+        text-decoration: none;
+        color: black; }
+    main .mainPage .pagniationItem ul .active {
+      background-color: #f9b129;
+      border: 1px solid black; }
+      main .mainPage .pagniationItem ul .active a {
+        color: #fff; }
+  main .mainPage .searchItem form {
+    position: relative;
+    display: flex; }
+    main .mainPage .searchItem form label {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      transition: all 0.3s; }
+    main .mainPage .searchItem form input {
+      padding: 15px 33px 15px 20px;
+      border-radius: 30px;
+      width: 100%;
+      outline: none;
+      border: 1px solid black; }
+    main .mainPage .searchItem form button {
+      border: none;
+      background-color: transparent;
+      margin-left: -35px; }
+  main .mainPage .categoriesItem {
+    margin-top: 50px; }
+    main .mainPage .categoriesItem h1 {
+      font-size: 30px;
+      font-weight: bolder;
+      color: black;
+      letter-spacing: 2px; }
+    main .mainPage .categoriesItem .listCategories {
+      margin-top: 15px; }
+      main .mainPage .categoriesItem .listCategories ul li {
+        padding: 15px 0px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #9b9b9b; }
+        main .mainPage .categoriesItem .listCategories ul li i {
+          font-size: 10px;
+          margin-right: 10px;
+          color: #ed5d5d; }
+        main .mainPage .categoriesItem .listCategories ul li a {
+          outline: none;
+          text-decoration: none;
+          color: black;
+          transition: all 0.3s; }
+          main .mainPage .categoriesItem .listCategories ul li a span {
+            color: #9b9b9b; }
+          main .mainPage .categoriesItem .listCategories ul li a:hover {
+            color: #f9b129; }
+  main .mainPage .popularPosts {
+    margin-top: 50px; }
+    main .mainPage .popularPosts h1 {
+      font-size: 30px;
+      font-weight: bolder;
+      color: black;
+      letter-spacing: 2px; }
+    main .mainPage .popularPosts .listPosts {
+      margin-top: 15px; }
+      main .mainPage .popularPosts .listPosts ul li {
+        padding: 15px 0px;
+        display: flex;
+        align-items: center; }
+        main .mainPage .popularPosts .listPosts ul li .imagePosts {
+          position: relative;
+          overflow: hidden;
+          /* flex: 1 1 auto; */
+          padding: 35px;
+          margin-right: 15px;
+          border-radius: 5px; }
+          main .mainPage .popularPosts .listPosts ul li .imagePosts img {
+            position: absolute;
+            content: "";
+            top: 0px;
+            left: 0px;
+            width: 100%; }
+        main .mainPage .popularPosts .listPosts ul li .textPosts a {
+          outline: none;
+          text-decoration: none;
+          color: black;
+          line-height: 1.3rem;
+          transition: all 0.3s; }
+          main .mainPage .popularPosts .listPosts ul li .textPosts a:hover {
+            color: #f9b129; }
+        main .mainPage .popularPosts .listPosts ul li .textPosts p {
+          margin-top: 5px;
+          color: #9b9b9b; }
+  main .mainPage .TagsItem {
+    margin-top: 50px; }
+    main .mainPage .TagsItem h1 {
+      font-size: 30px;
+      font-weight: bolder;
+      color: black;
+      letter-spacing: 2px; }
+    main .mainPage .TagsItem .listTages {
+      margin-top: 15px; }
+      main .mainPage .TagsItem .listTages ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap; }
+        main .mainPage .TagsItem .listTages ul li {
+          margin: 5px 5px 5px 0px; }
+          main .mainPage .TagsItem .listTages ul li a {
+            display: block;
+            border: 1px solid #9b9b9b;
+            padding: 10px 25px;
+            border-radius: 30px;
+            outline: none;
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            font-size: 14px;
+            transition: all 0.3s; }
+            main .mainPage .TagsItem .listTages ul li a:hover {
+              color: #fff;
+              background-color: black; }
+
+@media screen and (max-width: 480px) {
+  header {
+    display: none; }
+
+  nav {
+    display: block; }
+
+  .contentMenuPage {
+    padding: 10rem 0px 2rem !important; }
+
+  main .mainPage .pagniationItem {
+    margin-bottom: 20px; } }
+@media (min-width: 481px) and (max-width: 767px) {
+  header {
+    display: none; }
+
+  nav {
+    display: block; }
+
+  .contentMenuPage {
+    padding: 10rem 0px 2rem !important; } }
+@media (min-width: 768px) and (max-width: 1024px) {
+  header {
+    display: none; }
+
+  nav {
+    display: block; }
+
+  .contentMenuPage {
+    padding: 10rem 0px 2rem !important; }
+
+  main .mainPage .fullItemMain .row .col-md-6 {
+    width: 100% !important; } }
+@media (min-width: 1025px) and (max-width: 1260px) {
+  header {
+    display: none; }
+
+  nav {
+    display: block; }
+
+  .contentMenuPage {
+    padding: 10rem 0px 2rem !important; } }
+
+/*# sourceMappingURL=style.css.map */

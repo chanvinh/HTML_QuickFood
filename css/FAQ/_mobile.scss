@@ -1,0 +1,113 @@
+@media screen and (max-width:480px) {
+    header {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    .contentMenuPage {
+        padding: 10rem 0px 2rem !important;
+    }
+    main {
+        .mainPage {
+            .textNameCard {
+                width: 100%;
+                p {
+                    width: 100%;
+                }
+            }
+            .cardItemMainPage {
+                width: 100%;
+                .nameCard {
+                    h1 {
+                        flex: 1;
+                    }
+                    i {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) { 
+    header {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    .contentMenuPage {
+        padding: 10rem 0px 2rem !important;
+    }
+    main {
+        .mainPage {
+            .textNameCard {
+                width: 100%;
+                p {
+                    width: 100%;
+                }
+            }
+            .cardItemMainPage {
+                width: 100%;
+                .nameCard {
+                    h1 {
+                        flex: 1;
+                    }
+                    i {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    .contentMenuPage {
+        padding: 10rem 0px 2rem !important;
+    }
+    main {
+        .mainPage {
+            .textNameCard {
+                width: 100%;
+                p {
+                    width: 100%;
+                }
+            }
+            .cardItemMainPage {
+                width: 100%;
+                .nameCard {
+                    h1 {
+                        flex: 1;
+                    }
+                    i {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1260px) {
+    header {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    .contentMenuPage {
+        padding: 10rem 0px 2rem !important;
+    }
+}

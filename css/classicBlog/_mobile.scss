@@ -1,0 +1,93 @@
+@media screen and (max-width:480px) {
+    header {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    .contentMenuPage {
+        padding: 10rem 0px 2rem !important;
+    }
+    main {
+        .mainPage {
+            .fullItem { 
+                .item {
+                    .full {
+                        .textItem {
+                            ul {
+                                flex-wrap: wrap;
+                                li {
+                                    text-align: center;
+                                    width: 50%;
+                                    margin: 5px 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .pagniationItem{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) { 
+    header {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    .contentMenuPage {
+        padding: 10rem 0px 2rem !important;
+    }
+    main {
+        .mainPage {
+            .fullItem { 
+                .item {
+                    .full {
+                        .textItem {
+                            ul {
+                                flex-wrap: wrap;
+                                li {
+                                    text-align: center;
+                                    width: 50%;
+                                    margin: 5px 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .pagniationItem{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    .contentMenuPage {
+        padding: 10rem 0px 2rem !important;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1260px) {
+    header {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    .contentMenuPage {
+        padding: 10rem 0px 2rem !important;
+    }
+}
